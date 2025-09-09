@@ -14,7 +14,10 @@ The AI-Powered Mortgage Analysis System is a comprehensive solution designed to 
 - **Compliance Monitoring**: Ensures adherence to mortgage industry regulations and standards
 - **Risk Assessment**: Provides automated risk scoring based on extracted financial data
 
+
 ## Diagram
+
+![System Architecture Diagram](images/diagram_mortgage_bot.png)
 
 
 ## Technology Stack
