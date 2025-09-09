@@ -14,12 +14,15 @@ The AI-Powered Mortgage Analysis System is a comprehensive solution designed to 
 - **Compliance Monitoring**: Ensures adherence to mortgage industry regulations and standards
 - **Risk Assessment**: Provides automated risk scoring based on extracted financial data
 
+## Diagram
+
+
 ## Technology Stack
 
 - **Backend**: Python with Flask/Django framework
 - **OCR Engine**: Integration points for Tesseract, AWS Textract, or Google Cloud Vision API
 - **NLP Processing**: spaCy, NLTK, or custom machine learning models
-- **Database**: PostgreSQL or MongoDB for document storage and metadata
+- **Database**: PostgreSQL or Supabase for document storage and metadata
 - **Security**: End-to-end encryption for sensitive financial data
 
 ## Key Performance Indicators (KPIs)
