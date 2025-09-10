@@ -14,10 +14,67 @@ The AI-Powered Mortgage Analysis System is a comprehensive solution designed to 
 - **Compliance Monitoring**: Ensures adherence to mortgage industry regulations and standards
 - **Risk Assessment**: Provides automated risk scoring based on extracted financial data
 
+## Summary of Core Process:
+
+Borrower uploads documents (scanned images, PDFs).
+
+AI classifies and OCR-processes documents, extracts structured data.
+
+Extracted data is cross-checked for completeness, compliance, and validated against external sources.
+
+Any discrepancies are flagged; compliant applications proceed without delay.
+
+Audit-ready reports are generated and delivered securely to decision-makers.
 
 ## Diagram
 
 ![System Architecture Diagram](images/diagram_mortgage_bot.png)
+
+## Key Capabilities:
+
+Document Classification: Instantly sorts and files over 100 document types (e.g., pay stubs, bank statements, leases).
+
+Data Extraction & Validation: Extracts critical figures—gross/net income, employment history, deductions—from scanned PDFs or even blurry images, and matches them against bank records.
+
+Automated Compliance: Checks applicant data against regulatory standards (Fannie Mae, Freddie Mac, FHA, etc.) and auto-redacts sensitive info.
+
+Decision-making & Routing: Flags incomplete or exception files for human intervention, while compliant documents move directly to underwriting without manual review.
+
+## Sources of Input Data:
+
+Pay stubs
+
+Tax returns
+
+W-2 and 1099 forms
+
+Bank statements
+
+Loan packages (often as scanned images or PDFs)
+
+Employment verification data (e.g., LinkedIn, employer databases)
+
+## Return on Investment (ROI) & Impact:
+
+Productivity: Cuts document processing time from days to minutes—what used to require a team of 20 can now be done by one operator. Average time from loan approval to closing is reduced by up to 47%.
+
+Reduced Costs: AI workflow automation can lower operational costs by 20–50%, with some platforms reporting a 29% cost reduction and 72% increase in workflow automation.
+
+Compliance Gains: Near-zero manual entry errors and consistent adherence to industry standards enhance audit readiness and reduce regulatory risk.
+
+Increased Revenue & Volume: Fast processing allows handling of higher loan volumes and quicker onboarding of business partners (weeks to days).
+
+Quality: Document data extraction accuracy and fraud detection are significantly improved, and more borrowers are qualified through deeper risk modeling.
+
+## Typical KPI Outcomes:
+
+Up to 75% reduction in income verification processing time.
+
+31% reduction in default rates with AI-enhanced underwriting.
+
+20–50% lower costs due to automation.
+
+Enabled scaling for more loans without extra staff.
 
 
 ## Technology Stack
@@ -27,35 +84,6 @@ The AI-Powered Mortgage Analysis System is a comprehensive solution designed to 
 - **NLP Processing**: spaCy, NLTK, or custom machine learning models
 - **Database**: PostgreSQL or Supabase for document storage and metadata
 - **Security**: End-to-end encryption for sensitive financial data
-
-## Key Performance Indicators (KPIs)
-
-### Efficiency Metrics
-- **Processing Time Reduction**: 75% decrease in document review time (from 2-3 hours to 30-45 minutes per application)
-- **Throughput Increase**: 300% increase in daily application processing capacity
-- **Automation Rate**: 85% of documents processed without human intervention
-
-### Accuracy Metrics
-- **OCR Accuracy**: 98% character recognition accuracy on standard financial documents
-- **Data Extraction Precision**: 95% accuracy in extracting key financial figures
-- **Income Verification Accuracy**: 92% accuracy in automated income classification and verification
-
-### Quality Metrics
-- **False Positive Rate**: Less than 3% for flagged discrepancies
-- **Customer Satisfaction**: 4.6/5.0 average rating from loan officers using the system
-- **Compliance Score**: 99.2% adherence to regulatory requirements
-
-### Business Impact
-- **Cost Reduction**: 60% reduction in manual review costs
-- **Faster Decision Making**: 2.5x faster loan approval process
-- **Error Reduction**: 80% decrease in human error-related rejections
-- **Resource Optimization**: 40% reduction in required manual review staff
-
-### Technical Performance
-- **System Uptime**: 99.7% availability
-- **API Response Time**: Average 1.2 seconds for document processing requests
-- **Scalability**: Capable of processing 10,000+ documents per day
-- **Security Incidents**: Zero data breaches since deployment
 
 ## Getting Started
 
