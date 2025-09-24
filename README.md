@@ -12,11 +12,10 @@ The AI-Powered Mortgage Analysis System is a comprehensive solution designed to 
 - **Document Classification**: Automatically identifies and categorizes different document types
 - **Data Validation**: Cross-references extracted information for consistency and accuracy
 - **Compliance Monitoring**: Ensures adherence to mortgage industry regulations and standards
-- **Risk Assessment**: Provides automated risk scoring based on extracted financial data
 
 ## Summary of Core Process:
 
-Borrower uploads documents (scanned images, PDFs).
+Borrower uploads documents (scanned docs, PDFs).
 
 AI classifies and OCR-processes documents, extracts structured data.
 
@@ -36,8 +35,6 @@ Document Classification: Instantly sorts and files over 100 document types (e.g.
 
 Data Extraction & Validation: Extracts critical figures—gross/net income, employment history, deductions—from scanned PDFs or even blurry images, and matches them against bank records.
 
-Automated Compliance: Checks applicant data against regulatory standards (Fannie Mae, Freddie Mac, FHA, etc.) and auto-redacts sensitive info.
-
 Decision-making & Routing: Flags incomplete or exception files for human intervention, while compliant documents move directly to underwriting without manual review.
 
 ## Sources of Input Data:
@@ -54,56 +51,42 @@ Loan packages (often as scanned images or PDFs)
 
 Employment verification data (e.g., LinkedIn, employer databases)
 
-## Return on Investment (ROI) & Impact:
+## Estimated Return on Investment (ROI) & Impact:
 
 Productivity: Cuts document processing time from days to minutes—what used to require a team of 20 can now be done by one operator. Average time from loan approval to closing is reduced by up to 47%.
 
 Reduced Costs: AI workflow automation can lower operational costs by 20–50%, with some platforms reporting a 29% cost reduction and 72% increase in workflow automation.
 
-Compliance Gains: Near-zero manual entry errors and consistent adherence to industry standards enhance audit readiness and reduce regulatory risk.
-
 Increased Revenue & Volume: Fast processing allows handling of higher loan volumes and quicker onboarding of business partners (weeks to days).
 
 Quality: Document data extraction accuracy and fraud detection are significantly improved, and more borrowers are qualified through deeper risk modeling.
 
-## Typical KPI Outcomes:
-
-Up to 75% reduction in income verification processing time.
-
-31% reduction in default rates with AI-enhanced underwriting.
-
-20–50% lower costs due to automation.
-
-Enabled scaling for more loans without extra staff.
-
 
 ## Technology Stack
 
-- **Backend**: Python with Flask/Django framework
-- **OCR Engine**: Integration points for Tesseract, AWS Textract, or Google Cloud Vision API
-- **NLP Processing**: spaCy, NLTK, or custom machine learning models
+- **Backend**: Python with VSCode framework
+- **OCR Engine**: Docling
 - **Database**: PostgreSQL or Supabase for document storage and metadata
-- **Security**: End-to-end encryption for sensitive financial data
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- Required Python packages (see requirements.txt)
-- Access to OCR API services (AWS Textract, Google Cloud Vision, etc.)
+- Python 3.10+
+- Required Python packages (see pyproject.toml)
+- Easily integrates to other OCR API services (AWS Textract, Google Cloud Vision, etc.)
 - Database setup (PostgreSQL recommended)
 
 ### Installation
 ```bash
 git clone https://github.com/opsabarsec/ai-powered-mortgage-analysis.git
 cd ai-powered-mortgage-analysis
-pip install -r requirements.txt
+uv sync
 ```
 
 ### Configuration
 1. Set up environment variables for API keys
 2. Configure database connection
-3. Update OCR service endpoints
+3. Update OCR service endpoints (optional if youdon't use Docling)
 4. Run database migrations
 
 ## Usage
@@ -120,4 +103,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For technical support or questions, please open an issue in the GitHub repository or contact the development team.
+For technical support or questions, please open an issue in the GitHub repository or contact the developer.
