@@ -2,16 +2,13 @@
 
 ## Project Overview
 
-The AI-Powered Mortgage Analysis System is a comprehensive solution designed to revolutionize mortgage document processing and income verification. This system leverages advanced artificial intelligence technologies including Optical Character Recognition (OCR), Natural Language Processing (NLP), and machine learning algorithms to automate the traditionally manual and time-intensive mortgage application review process.
+The AI-Powered Mortgage Analysis System is a comprehensive solution designed to revolutionize mortgage document processing and income verification. This system leverages advanced artificial intelligence technologies including Optical Character Recognition (OCR), and Large Language Model calls to automate the traditionally manual and time-intensive mortgage application review process.
 
 ## Key Features
 
 - **Intelligent Document Upload**: Secure upload interface for various mortgage-related documents (pay stubs, tax returns, bank statements, etc.)
 - **Advanced OCR Processing**: Extracts text and data from scanned documents and images with high accuracy
-- **Income Verification Logic**: Automated analysis and verification of applicant income sources and stability
-- **Document Classification**: Automatically identifies and categorizes different document types
-- **Data Validation**: Cross-references extracted information for consistency and accuracy
-- **Compliance Monitoring**: Ensures adherence to mortgage industry regulations and standards
+- **Income Verification Logic**: Automated analysis and verification of applicant income sources and stability to evaluate compliance
 
 ## Summary of Core Process:
 
@@ -19,11 +16,7 @@ Borrower uploads documents (scanned docs, PDFs).
 
 AI classifies and OCR-processes documents, extracts structured data.
 
-Extracted data is cross-checked for completeness, compliance, and validated against external sources.
-
-Any discrepancies are flagged; compliant applications proceed without delay.
-
-Audit-ready reports are generated and delivered securely to decision-makers.
+Audit-ready reports can be generated from database data, to be delivered securely to decision-makers.
 
 ## Diagram
 
@@ -33,7 +26,7 @@ Audit-ready reports are generated and delivered securely to decision-makers.
 
 Document Classification: Instantly sorts and files over 100 document types (e.g., pay stubs, bank statements, leases).
 
-Data Extraction & Validation: Extracts critical figures—gross/net income, employment history, deductions—from scanned PDFs or even blurry images, and matches them against bank records.
+Data Extraction & Validation: Extracts critical figures—gross/net income, employment history, deductions—from scanned PDFs or even blurry images.
 
 Decision-making & Routing: Flags incomplete or exception files for human intervention, while compliant documents move directly to underwriting without manual review.
 
