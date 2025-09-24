@@ -1,7 +1,7 @@
 [project]
-name = "hotel-voice-agent"
+name = "mortgage_bot"
 version = "0.1.0"
-description = "Hotel receptionist voice agent and Supabase integration"
+description = "RAG agent with Supabase integration for the mortgage industry"
 authors = [
     { name="Marco Berta", email="info@marco-berta.com" }
 ]

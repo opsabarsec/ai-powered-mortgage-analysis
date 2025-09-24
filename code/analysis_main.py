@@ -3,15 +3,18 @@ from pydantic import BaseModel
 from typing import Optional
 import openai
 
+
 class ApplicantIncomeData(BaseModel):
     raw_text: str
     income_info: Optional[str] = None
     compliance_status: Optional[str] = None
 
+
 def ocr_extract_text(pdf_file):
     """Extract text from PDF using docling."""
     doc = Document.from_file(pdf_file)
     return doc.text
+
 
 def parse_income_data(ocr_text):
     """
@@ -23,6 +26,7 @@ def parse_income_data(ocr_text):
         return "Found income info (details here)."
     else:
         return "Income info not found."
+
 
 def verify_compliance(income_data):
     """
@@ -43,12 +47,12 @@ def verify_compliance(income_data):
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a mortgage compliance expert."},
-                {"role": "user", "content": prompt}
+                {"role": "user", "content": prompt},
             ],
             max_tokens=50,
-            temperature=0
+            temperature=0,
         )
-        gpt_reply = response.choices[0].message['content'].strip()
+        gpt_reply = response.choices[0].message["content"].strip()
         # Extract only the compliance status from the reply
         if "Compliant" in gpt_reply:
             return "Compliant"
@@ -57,13 +61,12 @@ def verify_compliance(income_data):
     except Exception as e:
         return f"Error during compliance check: {e}"
 
+
 if __name__ == "__main__":
     ocr_text = ocr_extract_text("sample_applicant.pdf")
     income = parse_income_data(ocr_text)
     result = verify_compliance(income)
     applicant_data = ApplicantIncomeData(
-        raw_text=ocr_text,
-        income_info=income,
-        compliance_status=result
+        raw_text=ocr_text, income_info=income, compliance_status=result
     )
     print("Applicant Data:", applicant_data.json(indent=2))
